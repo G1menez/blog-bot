@@ -1,62 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 @media (min-width: 576px) {
-
-    #tablet
+        .card-img-top
+    {
+        height: 250px;
+    }
+    #car-banner
+    {
+        margin-top: 1%;
+        width: 70%;
+        margin-left: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #88be8d;
+    }
+    .flex_wrap
     {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
-    }
-    .card-img-top
-{
-    height: 200px;
-}
 
-    #mobile
-    {
-        display: none;
     }
-    #desktop
+    #conteudo-tablet .card
+    {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    #conteudo-moba
     {
         display: none;
     }
 }
 @media (min-width: 992px) {
-
-    #tablet
-    {
-        display: none;
-    }
-    #mobile
-    {
-        display: none;
-    }
-    #desktop
+    .flex_wrap
     {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .card-img-top
-{
-    height: 230px;
-    width: 100px;
-}
-.card
-{
-    width: 25rem;
-}
+    {
+        height: 250px;
+    }
+    #car-banner
+    {
+        width: 50%;
+        margin-top: 1%;
+        margin-left: 25%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #88be8d;
+    }
+    #conteudo-tablet .card
+    {
+        width: 20%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 576px)
 {
-#tablet
+    #conteudo-moba
 {
-    display: none;
+    margin: 10px 5%;
 }
-#desktop
-{
-    display: none;
+#conteudo-moba .card{
+    margin-bottom: 10px;
 }
+    #car-banner
+    {
+        width: 99%;
+        margin-left: 1%;
+        padding: 0%;
+        background-color: white;
+    }
 .card-img-top
 {
     height: 200px;
+}
+#conteudo-tablet
+{
+    display: none;
 }
 }
 
@@ -78,3 +105,30 @@
 {
     color:#E8DFCA
 }
+
+.central{
+    text-align: center;
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+footer
+{
+    background-color: #4F6F52;
+    text-align: center;
+    color: white;
+    margin: 1px;
+}
+#footerLinks a
+{
+    color: white;
+    text-decoration: none;
+}
+#logoFooter {
+    text-align: center;
+    padding-top: 20px;
+  }
+  #logoFooter img
+  {
+    margin-top: -40px;
+    width: 200px;
+  }
