@@ -1,19 +1,45 @@
+/* css padrão pagina */
 *
 {
     margin: 0;
     padding: 0;
 }
+/* media queries tablet/desktop */
 @media (min-width: 576px) {
+    /* css img receita */
+    .img_rec
+    {
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    /* logo contato */
+    #logoCont
+{
+    width: 60%;
+    margin-left: 20%;
+}
+/* accordio receitas */
+    .accordion
+    {
+        width: 40%;
+        display: block;
+        margin-bottom: 30px;
+    }
+    /* flex wrap da pagina quem somos */
+    .quem .flex_wrap
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* tamanho imagem de cima do card */
         .card-img-top
     {
         height: 250px;
     }
-    #borda_forms {
-
-        right: 5px;
-        width: 20%;
-        margin-left: 35%;
-    }
+    /* carrousel card */
     #car-banner
     {
         margin-top: 1%;
@@ -22,6 +48,7 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    /* flex wrap maioria das paginas */
     .flex_wrap
     {
         display: flex;
@@ -29,27 +56,52 @@
         justify-content: space-around;
 
     }
+    /* define tamanho e posição do card do conteudo tablet */
     #conteudo-tablet .card
     {
         width: 45%;
         margin-bottom: 20px;
     }
+    /* tira o display do id conteudo moba*/
     #conteudo-moba
     {
         display: none;
     }
 }
+/* css pra desktop */
 @media (min-width: 992px) {
+    /* css para aproximar main do index */
+    #ind
+{ margin-top: -18px;
+}
+    /* define tamanho e posição da imagem na pagina de receitas */
+    .img_rec
+    {
+        width: 25%;
+        margin-left: 37.5%;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    /* tamanho accordion pagina receitas */
+    .accordion
+    {
+        width: 30%;
+        display: block;
+        margin-bottom: 30px;
+    }
+    /* flex wrap pra desktop */
     .flex_wrap
     {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+    /* altura imagem de cima do card */
     .card-img-top
     {
         height: 250px;
     }
+    /* tamanho e posição carrousel de card */
     #car-banner
     {
         width: 50%;
@@ -58,6 +110,7 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+    /* tamanho card pra desktop */
     #conteudo-tablet .card
     {
         width: 20%;
@@ -65,32 +118,54 @@
         margin-bottom: 20px;
     }
 }
+/* css pra mobile */
 @media (max-width: 576px)
 {
+    /* logo contato */
+    #logoCont
+{
+    width: 60%;
+    margin-left: 0px;
+}
+/* tamanho e posição da imagem da pagina receitas */
+    .img_rec
+    {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    /* margem da section conteudo moba */
     #conteudo-moba
 {
     margin: 10px 5%;
 }
+/* margem do card da section conteudo moba */
 #conteudo-moba .card{
     margin-bottom: 10px;
 }
+/* carrousel card mobile tamanho */
     #car-banner
     {
         width: 99%;
         margin-left: 1%;
         padding: 0%;
-        background-color: white;
     }
+    /* tamanho img de cima do card */
 .card-img-top
 {
     height: 200px;
 }
+/* tira o display da section conteudo-tablet */
 #conteudo-tablet
 {
     display: none;
 }
 }
-
+/* header */
+header{
+    background-color: #4F6F52;
+}
 .navbar
 {
     background-color: #4F6F52;
@@ -109,12 +184,13 @@
 {
     color:#E8DFCA
 }
-
+/* classe css para centralizar texto */
 .central{
     text-align: center;
     margin-bottom:20px;
     margin-top: 20px;
 }
+/* Conteudos footer */
 footer
 {
     background-color: #4F6F52;
@@ -136,16 +212,14 @@ footer
     margin-top: -40px;
     width: 200px;
   }
-header{
-    background-color: #4F6F52;
-}
-#ind
-{ margin-top: -18px;
-    background-color: #F1F0E8;
-}
 footer .central
 {
     margin-top: 0px;
+}
+/*  */
+main
+{
+    background-color: #F1F0E8;
 }
 .caixa {
     z-index: -1;
@@ -187,4 +261,91 @@ footer .central
 .quem .card-img-top
 {
     height: 400px;
+}
+body {
+	background: #e8e8e8;
+}
+.form-area {
+	padding-top: 7%;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.esq {
+    background-color: #4F6F52;
+	padding: 200px 98px;
+}
+.esq h2 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 48px;
+}
+.esq h2 span {
+	font-weight: 100;
+}
+.single-form{
+    background: #fff;
+}
+.dir {
+	padding: 70px 100px;
+	position: relative;
+}
+.dir i {
+	position: absolute;
+	font-size: 80px;
+	left: -27px;
+	top: 40%;
+	color: #fff;
+}
+.form-control {
+	border: 2px solid #000;
+}
+.dir button {
+	border: none;
+	border-radius: 0;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.dir button:hover{
+    background-color: #252525;
+}
+
+
+/* resposividade contate-nos */
+
+@media (min-width:576px) and (max-width:991px){
+    .dir i {
+	top: -52px;
+	transform: rotate(90deg);
+	left: 50%;
+}
+}
+
+@media (max-width:767px){
+    .esq {
+  padding: 90px 15px;
+  text-align: center;
+}
+.esq h2 {
+  font-size: 25px;
+}
+.dir {
+  padding: 25px;
+}
+.dir i {
+  top: -52px;
+  transform: rotate(90deg);
+  left: 46%;
+}
+    .dir button {
+	width: 150px;
+	padding: 12px 0;
+}
+    
 }
